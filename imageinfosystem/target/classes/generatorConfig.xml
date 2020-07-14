@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+  <classPathEntry location="D:\m2_repository\mysql\mysql-connector-java\5.1.47\mysql-connector-java-5.1.47.jar"/>
+
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/imageinfodb?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false" 
+    	driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+    
+    <javaModelGenerator targetPackage="com.imagesys.pojo" targetProject="imageinfosystem/src/main/java" />
+    
+    <sqlMapGenerator targetPackage="com.imagesys.mapper" targetProject="imageinfosystem/src/main/resources" />
+    
+    <javaClientGenerator targetPackage="com.imagesys.mapper" targetProject="imageinfosystem/src/main/java" type="XMLMAPPER" />
+    
+    <table tableName="backend_user" enableCountByExample="false"
+    	enableDeleteByExample="false" enableSelectByExample="false"
+    	enableUpdateByExample="false"></table>
+    	
+    <table tableName="data_dictionary" enableCountByExample="false"
+    	enableDeleteByExample="false" enableSelectByExample="false"
+    	enableUpdateByExample="false"></table>
+    
+    <table tableName="dev_user" enableCountByExample="false"
+    	enableDeleteByExample="false" enableSelectByExample="false"
+    	enableUpdateByExample="false"></table>
+    	
+    <table tableName="image_category" enableCountByExample="false"
+    	enableDeleteByExample="false" enableSelectByExample="false"
+    	enableUpdateByExample="false"></table>
+    	
+    <table tableName="image_info" enableCountByExample="false"
+    	enableDeleteByExample="false" enableSelectByExample="false"
+    	enableUpdateByExample="false"></table>
+    	
+    <table tableName="image_version" enableCountByExample="false"
+    	enableDeleteByExample="false" enableSelectByExample="false"
+    	enableUpdateByExample="false"></table>
+    	
+  </context>
+  
+</generatorConfiguration>
